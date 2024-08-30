@@ -9,7 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <!-- BlazeFace Model for Face Detection -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
-    <!-- Gender Detection Model (Placeholder for actual implementation) -->
+    <!-- COCO-SSD Model for Object Detection -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <!-- MobileNet Model for Gender Detection (Placeholder for actual implementation) -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
 </head>
 <body>
@@ -19,6 +21,10 @@
             <video id="webcam" autoplay></video>
         </div>
         <p id="gender-label">Detecting gender...</p>
+        <div class="gender-counts">
+            <p id="male-count">Males: 0</p>
+            <p id="female-count">Females: 0</p>
+        </div>
         <div class="controls">
             <button class="enable" id="enable-button">Enable Webcam</button>
             <button class="disable" id="disable-button">Disable Webcam</button>
